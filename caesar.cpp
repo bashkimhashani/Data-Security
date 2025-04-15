@@ -20,6 +20,11 @@ string lexoTekstin(const string& filename) {
     return text;
 }
 
+void llogaritFrekuencat(const string& text, double freq[26]){
+    int counts[26] = {0};
+    int total = 0;
+}
+
 
 int main(){
 
