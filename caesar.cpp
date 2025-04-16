@@ -35,7 +35,17 @@ void llogaritFrekuencat(const string& text, double freq[26]){
         freq[i] = (total > 0) ? (double)counts[i] / total : 0.0;
     }
 }
-
+string dekriptoCezar(const string& text, int key) {
+    string result;
+    for (char ch : text) {
+        if (isalpha(ch)) {
+            result += (ch - 'a' - key + 26) % 26 + 'a';
+        } else {
+            result += ch; 
+        }
+    }
+    return result;
+}
 
 int main(){
 
