@@ -46,7 +46,13 @@ string dekriptoCezar(const string& text, int key) {
     }
     return result;
 }
-//test
+double ndryshimiTotal(const double f1[26], const double f2[26]) {
+    double total = 0.0;
+    for (int i = 0; i < 26; i++) {
+        total += fabs(f1[i] - f2[i]);
+    }
+    return total;
+}
 int main(){
 
     return 0;
