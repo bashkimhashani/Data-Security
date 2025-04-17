@@ -56,6 +56,12 @@ double ndryshimiTotal(const double f1[26], const double f2[26]) {
     }
     return total;
 }
+void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
+    string trainingText = lexoTekstin(trainingFile);
+    string encryptedText = lexoTekstin(encryptedFile);
+}
+
+
 int main(){
 
     return 0;
