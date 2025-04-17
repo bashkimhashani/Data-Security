@@ -62,6 +62,24 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
 
     double modelFreq[26];
     llogaritFrekuencat(trainingText, modelFreq);
+
+    int bestKey = 0;
+    double minDiff = 1e9;
+    string decryptedMessage;
+
+    for(int key = 0; key < 26 ; key++){
+        string candidate = dekriptoCezar(encryptedText, key);
+        double candidateFreq[26];
+        llogaritFrekuencat(candidate, candidateFreq);
+
+        double diff = ndryshimiTotal(modelFreq, candidateFreq);
+        if(diff < minDiff){
+            minDiff = diff;
+            bestKey = key;
+            decryptedMessage = candidate;
+        }
+    }
+    
 }
 
 
