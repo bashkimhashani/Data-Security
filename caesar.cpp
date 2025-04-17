@@ -79,7 +79,8 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
             decryptedMessage = candidate;
         }
     }
-    
+    cout << "\nÇelësi me më shumë gjasa: " << bestKey << endl;
+    cout << "\nMesazhi i dekriptuar: " << decryptedMessage << endl; 
 }
 
 
