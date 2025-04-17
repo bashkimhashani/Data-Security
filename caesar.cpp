@@ -59,6 +59,9 @@ double ndryshimiTotal(const double f1[26], const double f2[26]) {
 void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
     string trainingText = lexoTekstin(trainingFile);
     string encryptedText = lexoTekstin(encryptedFile);
+
+    double modelFreq[26];
+    llogaritFrekuencat(trainingText, modelFreq);
 }
 
 
