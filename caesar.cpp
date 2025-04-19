@@ -97,5 +97,15 @@ int main(){
     string trainingFile = "training.txt";
     string encryptedFile = "secret.txt";
     int choice;
+
+    // vazhdon me pyt userin derisa ta merr pergjigjen 1 ose 2
+    while (true){
+        cout<<"Do you want to: \n";
+        cout << "1. Use the existing content in 'secret.txt'\n";
+        cout << "2. Write a new encrypted message to 'secret.txt'\n";
+        cout << "Enter your choice (1 or 2): ";
+    }
+    cin >> choice;
+    cin.ignore(); 
     
  }
