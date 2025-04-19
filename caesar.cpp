@@ -85,6 +85,9 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
 
 
 int main(){
-
+    string trainingFile = "training.txt";
+    string encryptedFile = "secret.txt";
+    
+    sulmoCezarin(trainingFile, encryptedFile);
     return 0;
 }
