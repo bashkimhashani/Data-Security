@@ -91,3 +91,11 @@ int main(){
     sulmoCezarin(trainingFile, encryptedFile);
     return 0;
 }
+
+
+ int main(){
+    string trainingFile = "training.txt";
+    string encryptedFile = "secret.txt";
+    int choice;
+    
+ }
