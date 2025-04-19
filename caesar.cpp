@@ -107,5 +107,32 @@ int main(){
     }
     cin >> choice;
     cin.ignore(); 
-    
+
+
+    if (choice == 1) {
+        break; //vazhdon ne dekriptim
+    } else if (choice == 2) {
+        cout << "Write your encrypted message below:\n";
+        string newMessage;
+        getline(cin, newMessage);
+
+        ofstream outFile(encryptedFile);
+        if (!outFile) {
+            cerr << "Could not write to file: " << encryptedFile << endl;
+            return 1;
+        }
+
+        outFile << newMessage;
+        outFile.close();
+        cout << "Encrypted message saved to '" << encryptedFile << "'\n";
+        break; //vazhdon ne dekriptim
+    } else {
+        cout << "\n Incorrect input! Please enter 1 or 2.\n\n";
+    }
+
+    sulmoCezarin(trainingFile, encryptedFile);
+
+    return 0;
+
+
  }
