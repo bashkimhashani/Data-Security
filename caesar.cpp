@@ -83,19 +83,11 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
     cout << "\nMesazhi i dekriptuar: " << decryptedMessage << endl; 
 }
 
-
-int main(){
-    string trainingFile = "training.txt";
-    string encryptedFile = "secret.txt";
-    
-    sulmoCezarin(trainingFile, encryptedFile);
-    return 0;
-}
-
-/*
  int main(){
     string trainingFile = "training.txt";
     string encryptedFile = "secret.txt";
+    
+    /*
     int choice;
 
     // vazhdon me pyt userin derisa ta merr pergjigjen 1 ose 2
@@ -129,12 +121,11 @@ int main(){
     } else {
         cout << "\n Incorrect input! Please enter 1 or 2.\n\n";
     }
+        
+    */
 
     sulmoCezarin(trainingFile, encryptedFile);
 
     return 0;
 
 }
-    */
-
- 
