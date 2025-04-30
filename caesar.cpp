@@ -79,7 +79,7 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
             decryptedMessage = candidate;
         }
     }
-    cout << "\nÇelësi me më shumë gjasa: " << bestKey << endl;
+    cout << "\nÇelesi me me shume gjasa: " << bestKey << endl;
     cout << "\nMesazhi i dekriptuar: " << decryptedMessage << endl; 
 }
 
@@ -87,22 +87,22 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
     string trainingFile = "training.txt";
     string encryptedFile = "secret.txt";
     
-    /*
+    
     int choice;
 
-    // vazhdon me pyt userin derisa ta merr pergjigjen 1 ose 2
+
     while (true){
         cout<<"Do you want to: \n";
         cout << "1. Use the existing content in 'secret.txt'\n";
         cout << "2. Write a new encrypted message to 'secret.txt'\n";
         cout << "Enter your choice (1 or 2): ";
-    }
+    
     cin >> choice;
     cin.ignore(); 
 
 
     if (choice == 1) {
-        break; //vazhdon ne dekriptim
+        break; 
     } else if (choice == 2) {
         cout << "Write your encrypted message below:\n";
         string newMessage;
@@ -117,12 +117,12 @@ void sulmoCezarin(const string& trainingFile, const string& encryptedFile){
         outFile << newMessage;
         outFile.close();
         cout << "Encrypted message saved to '" << encryptedFile << "'\n";
-        break; //vazhdon ne dekriptim
+        break; 
     } else {
         cout << "\n Incorrect input! Please enter 1 or 2.\n\n";
     }
-        
-    */
+}    
+    
 
     sulmoCezarin(trainingFile, encryptedFile);
 
